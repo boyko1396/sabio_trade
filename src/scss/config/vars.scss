@@ -108,6 +108,12 @@ $xs-mf: $xs;
   --gap-: -12rem;
   --gap-fluid: 24rem;
   --gap-fluid-: -24rem;
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
+    --fs-1: 68rem;
+    --fs-2: 42rem;
+    --fs-4: 32rem;
+    --fs-5: 24rem;
+    --fs-6: 16rem;
+    --fs-12: 24rem;
   }
 }

@@ -148,18 +148,28 @@ svg,
 .site {
   &__header {
     background: $navyColor;
-    margin: 0 0 100rem;
+    margin: 0 0 75rem;
     position: sticky;
     top: 0;
     z-index: 998;
+    @media (max-width: $md) {
+      margin-bottom: 24rem;
+    }
   }
   &__footer {
     margin-top: auto;
   }
   &__main {
+    width: 100%;
     max-width: 1350rem;
     margin: 0 auto;
     padding: 0 35rem;
     flex-grow: 1;
+    @media (max-width: $lg) {
+      padding: 0 20rem;
+    }
+    @media (max-width: $sm) {
+      padding: 0 16rem;
+    }
   }
 }

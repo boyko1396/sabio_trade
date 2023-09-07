@@ -15,6 +15,9 @@ import BaseHelpers from './helpers/BaseHelpers.js';
 // header mobile nav toggle
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 
+// box cookie
+import BoxCookie from './modules/BoxCookie.js';
+
 BaseHelpers.checkWebpSupport();
 BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
@@ -23,6 +26,15 @@ BaseHelpers.addLoadedClass();
 document.addEventListener('DOMContentLoaded', function() {
   const headerBtnToggle = new HeaderBtnToggle();
 });
+
+// box cookie
+document.addEventListener('DOMContentLoaded', function() {
+  const boxCookie = new BoxCookie();
+});
+
+// language select
+import LanguageSelect from './modules/LanguageSelect.js';
+const languageSelect = new LanguageSelect();
 
 // table tariffs bg accent
 var tariffsTable = document.getElementById('table-tariffs');

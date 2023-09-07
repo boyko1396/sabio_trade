@@ -91,6 +91,9 @@
       --btn-padding-x: 20rem;
       --btn-padding-y: 10rem;
       --btn-font-size: var(--fs-default);
+      @media (max-width: $md) {
+        --btn-padding-x: 20rem;
+      }
     }
     &-lg {
       --btn-height: 104rem;
@@ -98,6 +101,11 @@
       --btn-padding-y: 22rem;
       --btn-font-size: var(--fs-5);
       border-radius: $radiusLgg;
+      @media (max-width: $md) {
+        --btn-height: 72rem;
+        --btn-padding-x: 34rem;
+        --btn-padding-y: 10rem;
+      }
     }
   }
   &--width {
@@ -246,7 +254,7 @@
 }
 
 .sc-block {
-  $scGap: 11rem;
+  $scGap: 16rem;
   &__list {
     margin: -1 * $scGap;
     padding: 0;
@@ -281,7 +289,6 @@
 
 .btn-close {
   @extend %btn-reset, %area-click;
-  padding: 10rem;
   display: inline-flex;
   cursor: pointer;
   transition: $transition;
@@ -290,16 +297,17 @@
   }
   &--theme {
     &-gray {
-      color: $whiteColor;
+      color: $periwinkle3Color;
       &:hover {
         @media (min-width: $lg-mf) {
+          color: $whiteColor
         }
       }
     }
   }
   &__icon {
-    width: 18rem;
-    height: 18rem;
+    width: 24rem;
+    height: 24rem;
     display: block;
   }
 }

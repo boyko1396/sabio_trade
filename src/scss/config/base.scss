@@ -5,6 +5,14 @@
   max-width: $containerWidth;
   margin: 0 auto;
   padding: 0 80rem;
+  @media (max-width: $lg) {
+    padding-right: 40rem;
+    padding-left: 40rem;
+  }
+  @media (max-width: $sm) {
+    padding-right: 16rem;
+    padding-left: 16rem;
+  }
 }
 
 .row {
