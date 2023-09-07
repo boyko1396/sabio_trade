@@ -1,0 +1,65 @@
+<header class="header @@el">
+  <div class="container header__container">
+    @@include('./components/logo.html', {
+      'el': 'header__logo'
+    })
+    <div class="header__dropdown">
+      <div class="language-select header__language">
+        <button type="button" class="js-language-toggle language-select__current">
+          <span class="language-select__card">
+            <span class="language-select__card-flag">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#flag-en"></use>
+              </svg>
+            </span>
+            <span class="language-select__card-text">ENG</span>
+            <svg class="u-icon language-select__card-arrow">
+              <use xlink:href="images/icons/icons.svg#arrow"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="language-select__dropdown">
+          <a href="/en" class="language-select__dropdown-card language-select__card is-current">
+            <span class="language-select__card-flag">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#flag-en"></use>
+              </svg>
+            </span>
+            <span class="language-select__card-text">ENG</span>
+          </a>
+          <a href="/en" class="language-select__dropdown-card language-select__card">
+            <span class="language-select__card-flag">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#flag-it"></use>
+              </svg>
+            </span>
+            <span class="language-select__card-text">DER</span>
+          </a>
+          <a href="/en" class="language-select__dropdown-card language-select__card">
+            <span class="language-select__card-flag">
+              <svg class="u-icon">
+                <use xlink:href="images/icons/icons.svg#flag-it"></use>
+              </svg>
+            </span>
+            <span class="language-select__card-text">ITA</span>
+          </a>
+        </div>
+      </div>
+      <a href="#" class="header__btn-login btn btn--size-md btn--theme-simple">
+        <span class="btn__inner">
+          <span class="btn__title">Log in</span>
+        </span>
+      </a>
+    </div>
+    <a href="#" class="header__btn-get-funded btn btn--size-md btn--theme-blue">
+      <span class="btn__inner">
+        <span class="btn__title">Get funded</span>
+      </span>
+    </a>
+    <button type="button" class="js-header-toggle header__toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

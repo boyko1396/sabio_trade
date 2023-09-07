@@ -1,0 +1,113 @@
+$siteResolution: 1px;
+$mainFont: 'Inter';
+$mainWeight: 400;
+$lineHeightMedium: 1.3;
+$lineHeightTitle: 1.22;
+$lineHeightDefault: $lineHeightMedium;
+
+$containerWidth: 1280rem;
+
+$radiusSm: 8rem;
+$radiusMd: 12rem;
+$radiusLg: 18rem;
+$radiusLgg: 24rem;
+$radiusXl: 32rem;
+
+$whiteColor: #FFFFFF;
+$greenColor: #00B67A;
+$grayColor: #CFCFD1;
+$navyColor: #000B36;
+$lightBlueColor: #B9BADB;
+$blueColor: #005BFF;
+$lightBlue2Color: #6B9CF6;
+$lightBlue3Color: #7EF1FB;
+$blueishGrayColor: #397EFE;
+$brightBlueColor: #0085FF;
+$darkNavyColor: #1C1E4E;
+$brightGreenColor: #1CFF92;
+$royalBlueColor: #2974FF;
+$darkGrayColor: #313131;
+$slateBlueColor: #3C3F7F;
+$periwinkleColor: #6F71AC;
+$lightBlue4Color: #F0F0F7;
+$extraLightGrayColor: #F9F9FC;
+$offWhiteColor: #FCFDFF;
+$deepBlueColor: #0057FA;
+$navyBlueColor: #1C4591;
+$royalBlue2Color: #387DFF;
+$royalBlue3Color: #1632FF;
+$royalBlue4Color: #215CFF;
+$blueGrayColor: #C2C9FF;
+$lightBlue5Color: #DCDCE6;
+$white2Color: #FDFDFE;
+$navyBlue2Color: #001EF9;
+$royalBlue5Color: #0059FF;
+$periwinkle2Color: #4957D6;
+$navyBlue3Color: #1300EB;
+$royalBlue6Color: #1A01B3;
+$brightBlue2Color: #3C72FF;
+$royalBlue7Color: #2B5DF0;
+$brightBlue3Color: #0034FF;
+$lightCyanColor: #21CCE7;
+$darkNavy2Color: #282A66;
+$royalBlue8Color: #7B89EF;
+$navyBlue4Color: #2050D4;
+$royalBlue9Color: #333333;
+$royalBlue10Color: #4665DF;
+$royalBlue11Color: #4945F5;
+$royalBlue12Color: #7997FF;
+$royalBlue13Color: #224BB7;
+$navyBlue5Color: #001542;
+$navyBlue6Color: #000713;
+$lightBlue6Color: #548FFE;
+$periwinkle3Color: #5F62A0;
+$green2Color: #6DA544;
+$lightBlue7Color: #A2001D;
+$lightGray2Color: #D7D4FF;
+$lightGray3Color: #E3E3F1;
+$lightGray4Color: #EEEEEE;
+$lightGray5Color: #F4F6F6;
+
+$fontFamily: $mainFont, sans-serif;
+$fontColor: $whiteColor;
+$fontWeight: $mainWeight;
+$accentColor: $brightGreenColor;
+
+$transition: all .4s 0ms;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 114rem;
+  --fs-2: 92rem;
+  --fs-3: 48rem;
+  --fs-4: 36rem;
+  --fs-5: 28rem;
+  --fs-6: 24rem;
+  --fs-7: 22rem;
+  --fs-8: 20rem;
+  --fs-9: 18rem;
+  --fs-10: 16rem;
+  --fs-11: 14rem;
+  --fs-12: 32rem;
+  --fs-13: 42rem;
+  --offset: 15rem;
+  --offset-: 15rem;
+  --gap: 12rem;
+  --gap-: -12rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+  @media (max-width: $lg) {
+  }
+}

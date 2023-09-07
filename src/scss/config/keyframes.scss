@@ -1,0 +1,12 @@
+@keyframes fade-up-big {
+  0% {
+    transform: translateY(10rem);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
