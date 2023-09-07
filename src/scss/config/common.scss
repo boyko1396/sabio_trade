@@ -5,6 +5,9 @@
   display: inline-block;
   cursor: pointer;
   transition: $transition;
+  @media (max-width: $sm) {
+    width: 36rem;
+  }
   &:hover {
     text-decoration: none;
     @media (min-width: $lg-mf) {

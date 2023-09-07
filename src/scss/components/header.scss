@@ -478,7 +478,7 @@
       flex-shrink: 0;
     }
     @media (max-width: $sm) {
-      width: calc(100vw - 80rem);
+      width: calc(100vw - 100rem);
       margin-right: 16rem;
     }
     &--1 {
@@ -989,6 +989,7 @@
 
 .box-cookie {
   margin: 0 auto;
+  padding: 16rem;
   display: flex;
   justify-content: center;
   position: fixed;
