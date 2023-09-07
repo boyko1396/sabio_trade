@@ -67,18 +67,33 @@
       font-weight: 500;
       color: $lightBlueColor;
       border-radius: $radiusMd;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          background: $slateBlueColor;
+        }
+      }
     }
     &-blue {
       background: $darkNavy2Color;
       font-weight: 500;
       color: $offWhiteColor;
       border-radius: $radiusMd;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          background: $slateBlueColor;
+        }
+      }
     }
     &-navy-blue {
       background: $navyBlueColor;
       font-weight: 500;
       color: $offWhiteColor;
       border-radius: $radiusMd;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          background: $lightBlue2Color;
+        }
+      }
     }
     &-accent {
       background: $accentColor;
@@ -86,6 +101,11 @@
       font-weight: 800;
       color: $darkGrayColor;
       border-radius: $radiusMd;
+      &:hover {
+        @media (min-width: $lg-mf) {
+          background: #24ffba;
+        }
+      }
     }
   }
   &--size {
@@ -312,5 +332,52 @@
     width: 24rem;
     height: 24rem;
     display: block;
+  }
+}
+
+.box-cookie {
+  margin: 0 auto;
+  padding: 16rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20rem;
+  right: 0;
+  left: 0;
+  transition: $transition;
+  transition-property: transform, opacity, visibility;
+  z-index: 998;
+  &.is-hidden {
+    transform: translateY(100rem) scale(.6);
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__inner {
+    background: $darkNavyColor;
+    display: flex;
+    align-items: center;
+    padding: 8rem 16rem;
+    border-radius: $radiusSm;
+  }
+  &__text {
+    padding-right: 8rem;
+    font-size: var(--fs-11);
+    color: $white2Color;
+    a {
+      color: $blueGrayColor;
+      box-shadow: inset 0 -1rem 0 transparent;
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          box-shadow: inset 0 -1rem 0 rgba($blueGrayColor, .6);
+        }
+      }
+    }
+  }
+  &__btn-close {
+    margin-left: auto;
+    flex-shrink: 0;
   }
 }

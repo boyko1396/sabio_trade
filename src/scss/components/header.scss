@@ -50,6 +50,10 @@
       transition: $transition;
     }
   }
+  &.is-show &__current {
+    background: $slateBlueColor;
+    border-radius: $radiusSm;
+  }
   &.is-show &__card-arrow {
     transform: rotate(-180deg);
   }
@@ -984,51 +988,5 @@
       width: 100%;
       flex-basis: 100%;
     }
-  }
-}
-
-.box-cookie {
-  margin: 0 auto;
-  padding: 16rem;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 20rem;
-  right: 0;
-  left: 0;
-  transition: $transition;
-  transition-property: transform, opacity, visibility;
-  &.is-hidden {
-    transform: translateY(100rem) scale(.6);
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  &__inner {
-    background: $darkNavyColor;
-    display: flex;
-    align-items: center;
-    padding: 8rem 16rem;
-    border-radius: $radiusSm;
-  }
-  &__text {
-    padding-right: 8rem;
-    font-size: var(--fs-11);
-    color: $white2Color;
-    a {
-      color: $blueGrayColor;
-      box-shadow: inset 0 -1rem 0 transparent;
-      transition: $transition;
-      &:hover {
-        text-decoration: none;
-        @media (min-width: $lg-mf) {
-          box-shadow: inset 0 -1rem 0 rgba($blueGrayColor, .6);
-        }
-      }
-    }
-  }
-  &__btn-close {
-    margin-left: auto;
-    flex-shrink: 0;
   }
 }

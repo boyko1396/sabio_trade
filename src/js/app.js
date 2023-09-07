@@ -7,8 +7,6 @@
  * If we want to add a module, we should uncomment it.
  */
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-
 // support webp, identify device
 import BaseHelpers from './helpers/BaseHelpers.js';
 
